@@ -1,23 +1,6 @@
 <?php
 
-/**
- * Client generic errors
- *
- * @testCase
- */
-
-namespace KdybyTests\CsobPaymentGateway;
-
-use Kdyby\CsobPaymentGateway\ApiException;
-use Kdyby\CsobPaymentGateway\InternalErrorException;
-use Kdyby\CsobPaymentGateway\InvalidParameterException;
-use Kdyby\CsobPaymentGateway\MerchantBlockedException;
-use Kdyby\CsobPaymentGateway\Message\Request;
-use Kdyby\CsobPaymentGateway\MissingParameterException;
-use Kdyby\CsobPaymentGateway\PaymentNotFoundException;
-use Kdyby\CsobPaymentGateway\PaymentNotInValidStateException;
-use Tester;
-use Tester\Assert;
+namespace SlevomatCsobGateway;
 
 require_once __DIR__ . '/../bootstrap.php';
 

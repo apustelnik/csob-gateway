@@ -34,8 +34,6 @@
 		}
 	},
 	"autoload-dev": {
-		"psr-4": {
-			"SlevomatCsobGateway\\": "tests/unit"
-		}
+		"classmap": ["tests"]
 	}
 }

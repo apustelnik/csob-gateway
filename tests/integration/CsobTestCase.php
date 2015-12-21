@@ -1,18 +1,12 @@
 <?php
 
-namespace KdybyTests\CsobPaymentGateway;
+namespace SlevomatCsobGateway;
 
-use Kdyby\CsobPaymentGateway\Certificate\PrivateKey;
-use Kdyby\CsobPaymentGateway\Certificate\PublicKey;
-use Kdyby\CsobPaymentGateway\Client;
-use Kdyby\CsobPaymentGateway\Configuration;
-use Kdyby\CsobPaymentGateway\Message\Signature;
+use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
 use SlevomatCsobGateway\Api\ApiClient;
+use SlevomatCsobGateway\Api\Driver\GuzzleDriver;
 use SlevomatCsobGateway\Crypto\CryptoService;
-use SlevomatCsobGateway\RequestFactory;
-use Tester;
-
-
 
 class CsobTestCase extends \PHPUnit_Framework_TestCase
 {
@@ -25,21 +19,19 @@ class CsobTestCase extends \PHPUnit_Framework_TestCase
 	/** @var RequestFactory */
 	protected $requestFactory;
 
-
-
 	protected function setUp()
 	{
 		parent::setUp();
 		$this->client = new ApiClient(
 			new ApiDriverMock(),
 			new CryptoService(
-				__DIR__ . '/../../keys/client.key',
-				__DIR__ . '/../../keys/bank.pub'
+				__DIR__ . '/../keys/client.key',
+				__DIR__ . '/../keys/bank.pub'
 			),
 
-			'https://iapi.iplatebnibrana.csob.cz/'
+			'https://iapi.iplatebnibrana.csob.cz/api/v1.5'
 		);
-		$this->requestFactory = new RequestFactory('M123');
+		$this->requestFactory = new RequestFactory('A1487cFZHw');
 	}
 
 }

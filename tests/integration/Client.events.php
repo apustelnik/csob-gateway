@@ -6,7 +6,7 @@
  * @testCase
  */
 
-namespace KdybyTests\CsobPaymentGateway;
+namespace SlevomatCsobGateway;
 
 use Kdyby\CsobPaymentGateway\Certificate\PrivateKey;
 use Kdyby\CsobPaymentGateway\Certificate\PublicKey;

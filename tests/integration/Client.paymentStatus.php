@@ -6,7 +6,7 @@
  * @testCase
  */
 
-namespace KdybyTests\CsobPaymentGateway;
+namespace SlevomatCsobGateway;
 
 use Kdyby\CsobPaymentGateway\Client;
 use Kdyby\CsobPaymentGateway\Configuration;

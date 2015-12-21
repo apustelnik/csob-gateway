@@ -6,7 +6,7 @@
  * @testCase
  */
 
-namespace KdybyTests\CsobPaymentGateway;
+namespace SlevomatCsobGateway;
 
 use Kdyby\CsobPaymentGateway\InvalidParameterException;
 use Kdyby\CsobPaymentGateway\OperationNotAllowedException;

@@ -1,0 +1,15 @@
+{
+    "status": 303,
+    "headers": {
+        "Server": "nginx",
+        "Date": "Mon, 21 Dec 2015 20:56:09 GMT",
+        "Content-Length": "0",
+        "Connection": "keep-alive",
+        "Cache-Control": "no-cache, no-store, must-revalidate",
+        "Expires": "0",
+        "Location": "https:\/\/iplatebnibrana.csob.cz\/pay\/shop.example.com\/f71e374f-9937-45c1-a332-67f08154b66b\/",
+        "Pragma": "no-cache",
+        "Set-Cookie": "BIGipServerasors_iplatebnibrana.csob.cz_6443_pool=NScLZyqhJILaR23jBKM\/0wuNmVa8yzlf627Hp3GMvMDyc87YcLBTHn90IB4\/udiEkgHnIfLQwhgR0LEAAAAB;secure; path=\/"
+    },
+    "body": null
+}
