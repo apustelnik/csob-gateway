@@ -18,12 +18,12 @@
 		"php": "^7.0"
 	},
 	"require-dev": {
-		"consistence/coding-standard": "^0.10.0",
-		"jakub-onderka/php-parallel-lint": "^0.9",
+		"consistence/coding-standard": "^0.13.0",
+		"jakub-onderka/php-parallel-lint": "^0.9.2",
 		"phing/phing": "~2.12",
 		"phpstan/phpstan": "^0.5.1",
 		"phpunit/phpunit": "^5.2.12",
-		"slevomat/coding-standard": "^1.0.5",
+		"slevomat/coding-standard": "dev-2.0-dev#4ee04f72ef4ca400db55cf488e7ff9fe65c5626c",
 		"guzzlehttp/guzzle": "^6.1",
 		"psr/log": "^1.0"
 	},

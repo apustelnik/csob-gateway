@@ -10,6 +10,8 @@
 		<exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions"/>
 		<exclude name="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly"/>
 		<exclude name="SlevomatCodingStandard.Namespaces.UseOnlyWhitelistedNamespaces"/>
+		<exclude name="SlevomatCodingStandard.Classes.ClassConstantVisibility.MissingConstantVisibility"/>
+		<exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameInAnnotation.NonFullyQualifiedClassName"/>
 	</rule>
 	<rule ref="Consistence.NamingConventions.ValidVariableName.NotCamelCaps">
 		<exclude-pattern>tests/unit/Crypto/GlobalFunctionsMock.php</exclude-pattern>
@@ -17,6 +19,16 @@
 	<rule ref="SlevomatCodingStandard.Namespaces.UnusedUses">
 		<properties>
 			<property name="searchAnnotations" value="true"/>
+		</properties>
+	</rule>
+	<rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration">
+		<properties>
+			<property name="enableNullableTypeHints" value="false"/>
+			<property name="enableVoidTypeHint" value="false"/>
+			<property name="usefulAnnotations" type="array" value="
+				@dataProvider,
+				@runInSeparateProcess
+			"/>
 		</properties>
 	</rule>
 	<rule ref="Squiz.Functions.GlobalFunction.Found">
